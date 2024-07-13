@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="panel">
+      <div class="flex-column width100">
+        <span class="flex-row flex-center width100" name="row1">
+          <button ontouchstart='movement(this, event, "forward")' ontouchend="movementTouchEnd(this)" ontouchcancel="movementTouchEnd(this)">
+            <span class="material-symbols-outlined">
+              arrow_upward
+            </span>
+          </button>
+        </span>
+        
+        <span class="flex-row flex-space-between padding-left10vw padding-right10vw margin-top margin-bottom" name="row2">
+          <button ontouchstart='movement(this, event, "left")' ontouchend="movementTouchEnd(this)" ontouchcancel="movementTouchEnd(this)">
+            <span class="material-symbols-outlined">
+              arrow_left_alt
+            </span>
+          </button>
+          <button ontouchstart='movement(this, event, "right")' ontouchend="movementTouchEnd(this)" ontouchcancel="movementTouchEnd(this)">
+            <span class="material-symbols-outlined">
+              arrow_right_alt
+            </span>
+          </button>
+        </span>
+        
+        <span class="flex-row flex-center width100" name="row3">
+          <button ontouchstart='movement(this, event, "backward")' ontouchend="movementTouchEnd(this)" ontouchcancel="movementTouchEnd(this)">
+            <span class="material-symbols-outlined">
+              arrow_downward
+            </span>
+          </button>
+        </span>
+
+        <br /><br />
+        <span class="flex-row flex-space-between padding-left10vw padding-right10vw margin-top margin-bottom" name="row4">
+          <button ontouchstart='topMachine(this, event, "left")' ontouchend="topMachineTouchEnd(this)" ontouchcancel="topMachineTouchEnd(this)">
+            <span class="material-symbols-outlined">
+              arrow_left_alt
+            </span>
+          </button>
+          <button ontouchstart='topMachine(this, event, "right")' ontouchend="topMachineTouchEnd(this)" ontouchcancel="topMachineTouchEnd(this)">
+            <span class="material-symbols-outlined">
+              arrow_right_alt
+            </span>
+          </button>
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
